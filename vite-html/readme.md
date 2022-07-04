@@ -9,6 +9,9 @@
 npm init dockerfile@latest vite-html
 ```
 
+
+#### Dockerfile
+
 ```dockerfile
 FROM node:16-slim as builder
 

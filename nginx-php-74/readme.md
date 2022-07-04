@@ -9,6 +9,9 @@
 npm init dockerfile@latest nginx-php-74
 ```
 
+
+#### Dockerfile
+
 ```dockerfile
 FROM wyveo/nginx-php-fpm:php74
 

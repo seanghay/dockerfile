@@ -35,6 +35,7 @@ for (const file of files) {
   block += "\n#### Download via npm\n"
   block += `\n\`\`\`\nnpm init dockerfile@latest ${projectId}\n\`\`\`\n\n`;
 
+  block += "\n#### Dockerfile\n\n"
   block += '```dockerfile\n'
   block += code
   block += '\n\n```\n'
