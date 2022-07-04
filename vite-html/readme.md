@@ -2,8 +2,6 @@
 
 
 [![vite-html](https://github.com/seanghay/dockerfile/actions/workflows/vite-html.yml/badge.svg)](https://github.com/seanghay/dockerfile/actions/workflows/vite-html.yml)
-
-[View](./vite-html/)
 ```dockerfile
 FROM node:16-slim as builder
 

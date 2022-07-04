@@ -29,17 +29,22 @@ for (const file of files) {
 
   block += `## \`${projectId}\`\n\n`
   block += `\n[![${projectId}](https://github.com/seanghay/dockerfile/actions/workflows/${projectId}.yml/badge.svg)](https://github.com/seanghay/dockerfile/actions/workflows/${projectId}.yml)\n`
-  block += `\n[View](./vite-html/)\n`
+
+  block += `__LINK__`
 
   block += '```dockerfile\n'
   block += code
   block += '\n\n```\n'
   block += '\n\n'
   block += '---\n\n'
-  markdown += block;
+
+  markdown += block.replace(/__LINK__/gm, "\n[View](./vite-html/)\n\n");
 
   const readmeFile = path.join(path.resolve(p.dir), 'readme.md');
-  await fs.writeFile(readmeFile, block)
+
+  await fs.writeFile(readmeFile, block.replace(/__LINK__/gm, ''))
+
+
 }
 
 await fs.writeFile('all-dockerfile.md', markdown);

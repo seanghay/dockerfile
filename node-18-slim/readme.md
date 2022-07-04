@@ -2,8 +2,6 @@
 
 
 [![node-18-slim](https://github.com/seanghay/dockerfile/actions/workflows/node-18-slim.yml/badge.svg)](https://github.com/seanghay/dockerfile/actions/workflows/node-18-slim.yml)
-
-[View](./vite-html/)
 ```dockerfile
 FROM node:18-slim
 
