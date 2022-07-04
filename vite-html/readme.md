@@ -6,7 +6,7 @@
 #### Download via npm
 
 ```
-npm init dockerfile vite-html
+npm init dockerfile@latest vite-html
 ```
 
 ```dockerfile

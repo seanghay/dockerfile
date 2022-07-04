@@ -6,7 +6,7 @@
 #### Download via npm
 
 ```
-npm init dockerfile nginx-php-74
+npm init dockerfile@latest nginx-php-74
 ```
 
 ```dockerfile

@@ -33,7 +33,7 @@ for (const file of files) {
   block += `__LINK__`
 
   block += "\n#### Download via npm\n"
-  block += `\n\`\`\`\nnpm init dockerfile ${projectId}\n\`\`\`\n\n`;
+  block += `\n\`\`\`\nnpm init dockerfile@latest ${projectId}\n\`\`\`\n\n`;
 
   block += '```dockerfile\n'
   block += code

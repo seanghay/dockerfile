@@ -6,7 +6,7 @@
 #### Download via npm
 
 ```
-npm init dockerfile nginx
+npm init dockerfile@latest nginx
 ```
 
 ```dockerfile

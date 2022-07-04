@@ -1,27 +1,3 @@
-## `nginx`
-
-
-[![nginx](https://github.com/seanghay/dockerfile/actions/workflows/nginx.yml/badge.svg)](https://github.com/seanghay/dockerfile/actions/workflows/nginx.yml)
-
-[View](./vite-html/)
-
-
-#### Download via npm
-
-```
-npm init dockerfile nginx
-```
-
-```dockerfile
-FROM nginx
-
-COPY ./static/index.html /usr/share/nginx/html/index.html
-
-```
-
-
----
-
 ## `nginx-php-74`
 
 
@@ -33,13 +9,37 @@ COPY ./static/index.html /usr/share/nginx/html/index.html
 #### Download via npm
 
 ```
-npm init dockerfile nginx-php-74
+npm init dockerfile@latest nginx-php-74
 ```
 
 ```dockerfile
 FROM wyveo/nginx-php-fpm:php74
 
 COPY index.php /usr/share/nginx/html/index.php
+
+```
+
+
+---
+
+## `nginx`
+
+
+[![nginx](https://github.com/seanghay/dockerfile/actions/workflows/nginx.yml/badge.svg)](https://github.com/seanghay/dockerfile/actions/workflows/nginx.yml)
+
+[View](./vite-html/)
+
+
+#### Download via npm
+
+```
+npm init dockerfile@latest nginx
+```
+
+```dockerfile
+FROM nginx
+
+COPY ./static/index.html /usr/share/nginx/html/index.html
 
 ```
 
@@ -57,7 +57,7 @@ COPY index.php /usr/share/nginx/html/index.php
 #### Download via npm
 
 ```
-npm init dockerfile node-14
+npm init dockerfile@latest node-14
 ```
 
 ```dockerfile
@@ -109,7 +109,7 @@ CMD [ "node", "main.js" ]
 #### Download via npm
 
 ```
-npm init dockerfile node-16
+npm init dockerfile@latest node-16
 ```
 
 ```dockerfile
@@ -161,7 +161,7 @@ CMD [ "node", "main.js" ]
 #### Download via npm
 
 ```
-npm init dockerfile node-16-slim
+npm init dockerfile@latest node-16-slim
 ```
 
 ```dockerfile
@@ -213,7 +213,7 @@ CMD [ "node", "main.js" ]
 #### Download via npm
 
 ```
-npm init dockerfile node-18-slim
+npm init dockerfile@latest node-18-slim
 ```
 
 ```dockerfile
@@ -265,7 +265,7 @@ CMD [ "node", "main.js" ]
 #### Download via npm
 
 ```
-npm init dockerfile vite-html
+npm init dockerfile@latest vite-html
 ```
 
 ```dockerfile

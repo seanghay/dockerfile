@@ -6,7 +6,7 @@
 #### Download via npm
 
 ```
-npm init dockerfile node-16
+npm init dockerfile@latest node-16
 ```
 
 ```dockerfile

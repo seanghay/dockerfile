@@ -6,7 +6,7 @@
 #### Download via npm
 
 ```
-npm init dockerfile node-18-slim
+npm init dockerfile@latest node-18-slim
 ```
 
 ```dockerfile
