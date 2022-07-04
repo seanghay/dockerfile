@@ -25,6 +25,33 @@ COPY ./static/index.html /usr/share/nginx/html/index.html
 
 ---
 
+## `nginx-php-74`
+
+
+[![nginx-php-74](https://github.com/seanghay/dockerfile/actions/workflows/nginx-php-74.yml/badge.svg)](https://github.com/seanghay/dockerfile/actions/workflows/nginx-php-74.yml)
+
+[View](./nginx-php-74)
+
+
+#### Download via npm
+
+```
+npm init dockerfile@latest nginx-php-74
+```
+
+
+#### Dockerfile
+
+```dockerfile
+FROM wyveo/nginx-php-fpm:php74
+
+COPY index.php /usr/share/nginx/html/index.php
+
+```
+
+
+---
+
 ## `node-14`
 
 
@@ -74,33 +101,6 @@ USER node
 EXPOSE 8080
 
 CMD [ "node", "main.js" ]
-
-```
-
-
----
-
-## `nginx-php-74`
-
-
-[![nginx-php-74](https://github.com/seanghay/dockerfile/actions/workflows/nginx-php-74.yml/badge.svg)](https://github.com/seanghay/dockerfile/actions/workflows/nginx-php-74.yml)
-
-[View](./nginx-php-74)
-
-
-#### Download via npm
-
-```
-npm init dockerfile@latest nginx-php-74
-```
-
-
-#### Dockerfile
-
-```dockerfile
-FROM wyveo/nginx-php-fpm:php74
-
-COPY index.php /usr/share/nginx/html/index.php
 
 ```
 
