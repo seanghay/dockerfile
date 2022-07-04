@@ -1,30 +1,3 @@
-## `nginx`
-
-
-[![nginx](https://github.com/seanghay/dockerfile/actions/workflows/nginx.yml/badge.svg)](https://github.com/seanghay/dockerfile/actions/workflows/nginx.yml)
-
-[View](./nginx)
-
-
-#### Download via npm
-
-```
-npm init dockerfile@latest nginx
-```
-
-
-#### Dockerfile
-
-```dockerfile
-FROM nginx
-
-COPY ./static/index.html /usr/share/nginx/html/index.html
-
-```
-
-
----
-
 ## `nginx-php-74`
 
 
@@ -46,6 +19,33 @@ npm init dockerfile@latest nginx-php-74
 FROM wyveo/nginx-php-fpm:php74
 
 COPY index.php /usr/share/nginx/html/index.php
+
+```
+
+
+---
+
+## `nginx`
+
+
+[![nginx](https://github.com/seanghay/dockerfile/actions/workflows/nginx.yml/badge.svg)](https://github.com/seanghay/dockerfile/actions/workflows/nginx.yml)
+
+[View](./nginx)
+
+
+#### Download via npm
+
+```
+npm init dockerfile@latest nginx
+```
+
+
+#### Dockerfile
+
+```dockerfile
+FROM nginx
+
+COPY ./static/index.html /usr/share/nginx/html/index.html
 
 ```
 

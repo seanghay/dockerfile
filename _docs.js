@@ -15,14 +15,15 @@ const md = markdown();
 const html = md.render(mdContent);
 
 const template = await fse.readFile("_doc-template.html", "utf8");
-const rendered = template.replace(/__OUTPUT__/gm, html);
+const rendered = template
+  .replace(/__OUTPUT__/gm, html)
+  .replace(/__TITLE__/gm, "Dockerfile");
 
 await fse.writeFile(path.join("dist", "index.html"), rendered);
 
 const files = await fg(["*/**/*Dockerfile", "!bin/**"]);
 
 for (const file of files) {
-  
   const p = path.parse(file);
   const id = p.dir;
   const readmeDocMd = await fse.readFile(path.join(p.dir, "readme.md"), "utf8");
@@ -32,7 +33,6 @@ for (const file of files) {
 
   await fse.writeFile(
     filePath,
-    template.replace(/__OUTPUT__/, md.render(readmeDocMd))
+    template.replace(/__OUTPUT__/, md.render(readmeDocMd)).replace(/__TITLE__/gm, `${id} / Dockerfile`)
   );
-
 }
