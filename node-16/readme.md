@@ -2,6 +2,13 @@
 
 
 [![node-16](https://github.com/seanghay/dockerfile/actions/workflows/node-16.yml/badge.svg)](https://github.com/seanghay/dockerfile/actions/workflows/node-16.yml)
+
+#### Download via npm
+
+```
+npm init dockerfile node-16
+```
+
 ```dockerfile
 FROM node:16-alpine
 

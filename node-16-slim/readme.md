@@ -2,6 +2,13 @@
 
 
 [![node-16-slim](https://github.com/seanghay/dockerfile/actions/workflows/node-16-slim.yml/badge.svg)](https://github.com/seanghay/dockerfile/actions/workflows/node-16-slim.yml)
+
+#### Download via npm
+
+```
+npm init dockerfile node-16-slim
+```
+
 ```dockerfile
 FROM node:16-slim
 

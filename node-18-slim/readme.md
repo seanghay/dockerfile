@@ -2,6 +2,13 @@
 
 
 [![node-18-slim](https://github.com/seanghay/dockerfile/actions/workflows/node-18-slim.yml/badge.svg)](https://github.com/seanghay/dockerfile/actions/workflows/node-18-slim.yml)
+
+#### Download via npm
+
+```
+npm init dockerfile node-18-slim
+```
+
 ```dockerfile
 FROM node:18-slim
 
