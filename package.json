@@ -1,6 +1,6 @@
 {
   "name": "create-dockerfile",
-  "version": "0.0.0",
+  "version": "0.0.2",
   "description": "Where you can copy and paste Dockerfile.",
   "main": "_generate.js",
   "type": "module",
