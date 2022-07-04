@@ -2,6 +2,8 @@
 
 
 [![node-16](https://github.com/seanghay/dockerfile/actions/workflows/node-16.yml/badge.svg)](https://github.com/seanghay/dockerfile/actions/workflows/node-16.yml)
+
+[View](./vite-html/)
 ```dockerfile
 FROM node:16-alpine
 

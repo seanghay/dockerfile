@@ -2,6 +2,8 @@
 
 
 [![nginx](https://github.com/seanghay/dockerfile/actions/workflows/nginx.yml/badge.svg)](https://github.com/seanghay/dockerfile/actions/workflows/nginx.yml)
+
+[View](./vite-html/)
 ```dockerfile
 FROM nginx
 

@@ -29,6 +29,8 @@ for (const file of files) {
 
   block += `## \`${projectId}\`\n\n`
   block += `\n[![${projectId}](https://github.com/seanghay/dockerfile/actions/workflows/${projectId}.yml/badge.svg)](https://github.com/seanghay/dockerfile/actions/workflows/${projectId}.yml)\n`
+  block += `\n[View](./vite-html/)\n`
+
   block += '```dockerfile\n'
   block += code
   block += '\n\n```\n'
