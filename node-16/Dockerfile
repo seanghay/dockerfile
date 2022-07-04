@@ -6,9 +6,6 @@ RUN mkdir -p /opt/app
 # Change current working directory
 WORKDIR /opt/app
 
-# Add a new user called `node` 
-RUN adduser -S app
-
 # Copy package files
 COPY package*.json ./
 
@@ -23,10 +20,10 @@ RUN npm ci
 COPY . .
 
 # Change directory's owner
-RUN chown -R app /opt/app
+RUN chown -R node /opt/app
 
 # Specify running user
-USER app
+USER node
 
 # Port of the application
 EXPOSE 8080

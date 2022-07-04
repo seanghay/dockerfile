@@ -1,4 +1,4 @@
-FROM node:14-alpine
+FROM node:16-slim
 
 # Create a new directory for the project
 RUN mkdir -p /opt/app
