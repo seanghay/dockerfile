@@ -1,4 +1,4 @@
-name: build-publish-image
+name: node-16
 
 on: [push]
     
@@ -7,7 +7,7 @@ env:
   IMAGE_NAME: ${{ github.repository }}
 
 jobs:
-  build-and-push-image:
+  node-16:
     runs-on: ubuntu-latest
     permissions:
       contents: read
