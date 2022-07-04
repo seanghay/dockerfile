@@ -31,8 +31,10 @@ for (const file of files) {
   const filePath = path.join(projectDir, "index.html");
   await fse.mkdirp(projectDir);
 
+  const c = `<a href="/">Go back</a>\n${md.render(readmeDocMd)}` 
+
   await fse.writeFile(
     filePath,
-    template.replace(/__OUTPUT__/, md.render(readmeDocMd)).replace(/__TITLE__/gm, `${id} / Dockerfile`)
+    template.replace(/__OUTPUT__/, c).replace(/__TITLE__/gm, `${id} / Dockerfile`)
   );
 }
