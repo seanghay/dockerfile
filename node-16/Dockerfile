@@ -22,8 +22,6 @@ RUN npm ci
 # Copy our project files
 COPY . .
 
-RUN command
-
 # Change directory's owner
 RUN chown -R app /opt/app
 
