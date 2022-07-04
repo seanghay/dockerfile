@@ -15,7 +15,6 @@ for (const file of files) {
   const projectId = p.dir;
   const rendered = template
     .replace(/__PROJECT_ID__/gm, projectId)
-    .replace(/__TIMESTAMP__/gm, new Date().toISOString())
     .replace(/__PATH__/gm, file);
 
   const filename = `${projectId}.yml`;

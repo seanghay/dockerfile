@@ -1,4 +1,3 @@
-# Generated at __TIMESTAMP__
 # Dockerfile: __PATH__
 
 name: __PROJECT_ID__
