@@ -1,0 +1,17 @@
+{
+  "name": "vite-html",
+  "version": "0.0.0",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "Seanghay Yath <seanghay.dev@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "vite": "^2.9.13"
+  }
+}
