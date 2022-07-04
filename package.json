@@ -7,6 +7,7 @@
   "type": "module",
   "scripts": {
     "generate": "node _generate.js",
+    "docs": "node _docs.js",
     "prepare": "husky install"
   },
   "repository": {
@@ -22,7 +23,9 @@
   "homepage": "https://github.com/seanghay/dockerfile#readme",
   "devDependencies": {
     "fast-glob": "^3.2.11",
+    "fs-extra": "^10.1.0",
     "husky": "^8.0.0",
+    "markdown-it": "^13.0.1",
     "mkdirp": "^1.0.4"
   }
 }

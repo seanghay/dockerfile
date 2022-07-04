@@ -1,6 +1,6 @@
-# Dockerfile: nginx-php-7.4/Dockerfile
+# Dockerfile: nginx-php-74/Dockerfile
 
-name: nginx-php-7.4
+name: nginx-php-74
 
 on: [push]
     
@@ -9,7 +9,7 @@ env:
   IMAGE_NAME: ${{ github.repository }}
 
 jobs:
-  nginx-php-7.4:
+  nginx-php-74:
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -27,7 +27,7 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@ad44023a93711e3deb337508980b4b5e9bcdc5dc
         with:
-          context: ./nginx-php-7.4
+          context: ./nginx-php-74
           push: false
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}

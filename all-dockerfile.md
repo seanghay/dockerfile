@@ -12,10 +12,10 @@ COPY ./static/index.html /usr/share/nginx/html/index.html
 
 ---
 
-## `nginx-php-7.4`
+## `nginx-php-74`
 
 
-[![nginx-php-7.4](https://github.com/seanghay/dockerfile/actions/workflows/nginx-php-7.4.yml/badge.svg)](https://github.com/seanghay/dockerfile/actions/workflows/nginx-php-7.4.yml)
+[![nginx-php-74](https://github.com/seanghay/dockerfile/actions/workflows/nginx-php-74.yml/badge.svg)](https://github.com/seanghay/dockerfile/actions/workflows/nginx-php-74.yml)
 ```dockerfile
 FROM wyveo/nginx-php-fpm:php74
 
