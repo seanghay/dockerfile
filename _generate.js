@@ -10,7 +10,6 @@ const files = await fg("**/*/*Dockerfile");
 
 await mkdirp(workflowDir);
 
-
 let markdown = '';
 
 for (const file of files) {
@@ -21,7 +20,6 @@ for (const file of files) {
     .replace(/__PROJECT_ID__/gm, projectId)
     .replace(/__PATH__/gm, file);
 
-  
   const filename = `${projectId}.yml`;
   const outputPath = path.join(workflowDir, filename);
   await fs.writeFile(outputPath, rendered);
@@ -36,7 +34,6 @@ for (const file of files) {
   block += '\n\n```\n'
   block += '\n\n'
   block += '---\n\n'
-
   markdown += block;
 
   const readmeFile = path.join(path.resolve(p.dir), 'readme.md');
@@ -44,4 +41,3 @@ for (const file of files) {
 }
 
 await fs.writeFile('all-dockerfile.md', markdown);
-
