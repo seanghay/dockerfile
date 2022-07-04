@@ -27,13 +27,20 @@ for (const file of files) {
   await fs.writeFile(outputPath, rendered);
   console.log(`Generated workflow in ${JSON.stringify(path.relative(process.cwd(), outputPath))}`)
 
-  markdown += `## \`${projectId}\`\n\n`
-  markdown += `\n[![${projectId}](https://github.com/seanghay/dockerfile/actions/workflows/${projectId}.yml/badge.svg)](https://github.com/seanghay/dockerfile/actions/workflows/${projectId}.yml)\n`
-  markdown += '```dockerfile\n'
-  markdown += code
-  markdown += '\n\n```\n'
-  markdown += '\n\n'
-  markdown += '---\n\n'
+  let block = '';
+
+  block += `## \`${projectId}\`\n\n`
+  block += `\n[![${projectId}](https://github.com/seanghay/dockerfile/actions/workflows/${projectId}.yml/badge.svg)](https://github.com/seanghay/dockerfile/actions/workflows/${projectId}.yml)\n`
+  block += '```dockerfile\n'
+  block += code
+  block += '\n\n```\n'
+  block += '\n\n'
+  block += '---\n\n'
+
+  markdown += block;
+
+  const readmeFile = path.join(path.resolve(p.dir), 'readme.md');
+  await fs.writeFile(readmeFile, block)
 }
 
 await fs.writeFile('all-dockerfile.md', markdown);
