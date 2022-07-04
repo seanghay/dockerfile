@@ -3,7 +3,7 @@
 
 [![nginx](https://github.com/seanghay/dockerfile/actions/workflows/nginx.yml/badge.svg)](https://github.com/seanghay/dockerfile/actions/workflows/nginx.yml)
 
-[View](./vite-html/)
+[View](./nginx)
 
 
 #### Download via npm
@@ -25,12 +25,39 @@ COPY ./static/index.html /usr/share/nginx/html/index.html
 
 ---
 
+## `nginx-php-74`
+
+
+[![nginx-php-74](https://github.com/seanghay/dockerfile/actions/workflows/nginx-php-74.yml/badge.svg)](https://github.com/seanghay/dockerfile/actions/workflows/nginx-php-74.yml)
+
+[View](./nginx-php-74)
+
+
+#### Download via npm
+
+```
+npm init dockerfile@latest nginx-php-74
+```
+
+
+#### Dockerfile
+
+```dockerfile
+FROM wyveo/nginx-php-fpm:php74
+
+COPY index.php /usr/share/nginx/html/index.php
+
+```
+
+
+---
+
 ## `node-14`
 
 
 [![node-14](https://github.com/seanghay/dockerfile/actions/workflows/node-14.yml/badge.svg)](https://github.com/seanghay/dockerfile/actions/workflows/node-14.yml)
 
-[View](./vite-html/)
+[View](./node-14)
 
 
 #### Download via npm
@@ -80,39 +107,12 @@ CMD [ "node", "main.js" ]
 
 ---
 
-## `nginx-php-74`
-
-
-[![nginx-php-74](https://github.com/seanghay/dockerfile/actions/workflows/nginx-php-74.yml/badge.svg)](https://github.com/seanghay/dockerfile/actions/workflows/nginx-php-74.yml)
-
-[View](./vite-html/)
-
-
-#### Download via npm
-
-```
-npm init dockerfile@latest nginx-php-74
-```
-
-
-#### Dockerfile
-
-```dockerfile
-FROM wyveo/nginx-php-fpm:php74
-
-COPY index.php /usr/share/nginx/html/index.php
-
-```
-
-
----
-
 ## `node-16`
 
 
 [![node-16](https://github.com/seanghay/dockerfile/actions/workflows/node-16.yml/badge.svg)](https://github.com/seanghay/dockerfile/actions/workflows/node-16.yml)
 
-[View](./vite-html/)
+[View](./node-16)
 
 
 #### Download via npm
@@ -167,7 +167,7 @@ CMD [ "node", "main.js" ]
 
 [![node-16-slim](https://github.com/seanghay/dockerfile/actions/workflows/node-16-slim.yml/badge.svg)](https://github.com/seanghay/dockerfile/actions/workflows/node-16-slim.yml)
 
-[View](./vite-html/)
+[View](./node-16-slim)
 
 
 #### Download via npm
@@ -222,7 +222,7 @@ CMD [ "node", "main.js" ]
 
 [![node-18-slim](https://github.com/seanghay/dockerfile/actions/workflows/node-18-slim.yml/badge.svg)](https://github.com/seanghay/dockerfile/actions/workflows/node-18-slim.yml)
 
-[View](./vite-html/)
+[View](./node-18-slim)
 
 
 #### Download via npm
@@ -277,7 +277,7 @@ CMD [ "node", "main.js" ]
 
 [![vite-html](https://github.com/seanghay/dockerfile/actions/workflows/vite-html.yml/badge.svg)](https://github.com/seanghay/dockerfile/actions/workflows/vite-html.yml)
 
-[View](./vite-html/)
+[View](./vite-html)
 
 
 #### Download via npm

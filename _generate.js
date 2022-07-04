@@ -42,7 +42,7 @@ for (const file of files) {
   block += '\n\n'
   block += '---\n\n'
 
-  markdown += block.replace(/__LINK__/gm, "\n[View](./vite-html/)\n\n");
+  markdown += block.replace(/__LINK__/gm, `\n[View](./${projectId})\n\n`);
 
   const readmeFile = path.join(path.resolve(p.dir), 'readme.md');
 
