@@ -1,0 +1,25 @@
+{
+  "name": "dockerfile",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Where you can copy and paste Dockerfile.",
+  "main": "_generate.js",
+  "type": "module",
+  "scripts": {
+    "generate": "node _generate.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seanghay/dockerfile.git"
+  },
+  "keywords": [],
+  "author": "Seanghay Yath <seanghay.dev@gmail.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/seanghay/dockerfile/issues"
+  },
+  "homepage": "https://github.com/seanghay/dockerfile#readme",
+  "devDependencies": {
+    "fast-glob": "^3.2.11"
+  }
+}

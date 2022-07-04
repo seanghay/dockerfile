@@ -1,7 +1,7 @@
-# Generated at 2022-07-04T08:17:20.185Z
-# Dockerfile: node-16/Dockerfile
+# Generated at __TIMESTAMP__
+# Dockerfile: __PATH__
 
-name: node-16
+name: __PROJECT_ID__
 
 on: [push]
     
@@ -10,7 +10,7 @@ env:
   IMAGE_NAME: ${{ github.repository }}
 
 jobs:
-  node-16:
+  __PROJECT_ID__:
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -28,7 +28,7 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@ad44023a93711e3deb337508980b4b5e9bcdc5dc
         with:
-          context: ./node-16
+          context: ./__PROJECT_ID__
           push: false
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
