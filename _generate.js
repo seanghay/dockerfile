@@ -28,6 +28,7 @@ for (const file of files) {
   console.log(`Generated workflow in ${JSON.stringify(path.relative(process.cwd(), outputPath))}`)
 
   markdown += `## \`${projectId}\`\n\n`
+  markdown += `\n[![${projectId}](https://github.com/seanghay/dockerfile/actions/workflows/${projectId}.yml/badge.svg)](https://github.com/seanghay/dockerfile/actions/workflows/${projectId}.yml)\n`
   markdown += '```dockerfile\n'
   markdown += code
   markdown += '\n\n```\n'
@@ -36,3 +37,4 @@ for (const file of files) {
 }
 
 await fs.writeFile('all-dockerfile.md', markdown);
+

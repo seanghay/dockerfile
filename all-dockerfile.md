@@ -1,5 +1,7 @@
 ## `node-14`
 
+
+[![node-14](https://github.com/seanghay/dockerfile/actions/workflows/node-14.yml/badge.svg)](https://github.com/seanghay/dockerfile/actions/workflows/node-14.yml)
 ```dockerfile
 FROM node:14-alpine
 
@@ -43,6 +45,8 @@ CMD [ "node", "main.js" ]
 
 ## `node-16`
 
+
+[![node-16](https://github.com/seanghay/dockerfile/actions/workflows/node-16.yml/badge.svg)](https://github.com/seanghay/dockerfile/actions/workflows/node-16.yml)
 ```dockerfile
 FROM node:16-alpine
 
