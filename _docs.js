@@ -19,7 +19,7 @@ const rendered = template.replace(/__OUTPUT__/gm, html);
 
 await fse.writeFile(path.join("dist", "index.html"), rendered);
 
-const files = await fg("**/*/*Dockerfile");
+const files = await fg(["*/**/*Dockerfile", "!bin/**"]);
 
 for (const file of files) {
   

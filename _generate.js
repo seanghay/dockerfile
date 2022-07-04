@@ -6,7 +6,7 @@ import mkdirp from "mkdirp";
 
 const workflowDir = path.resolve(".github/workflows/");
 const template = await fs.readFile("_ci-template.yml", "utf-8");
-const files = await fg("**/*/*Dockerfile");
+const files = await fg(["*/**/*Dockerfile", "!bin/**"]);
 
 await mkdirp(workflowDir);
 
