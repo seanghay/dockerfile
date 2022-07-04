@@ -1,3 +1,17 @@
+## `nginx`
+
+
+[![nginx](https://github.com/seanghay/dockerfile/actions/workflows/nginx.yml/badge.svg)](https://github.com/seanghay/dockerfile/actions/workflows/nginx.yml)
+```dockerfile
+FROM nginx
+
+COPY ./static/index.html /usr/share/nginx/html/index.html
+
+```
+
+
+---
+
 ## `node-14`
 
 
@@ -82,12 +96,12 @@ CMD [ "node", "main.js" ]
 
 ---
 
-## `node-16-slim`
+## `node-18-slim`
 
 
-[![node-16-slim](https://github.com/seanghay/dockerfile/actions/workflows/node-16-slim.yml/badge.svg)](https://github.com/seanghay/dockerfile/actions/workflows/node-16-slim.yml)
+[![node-18-slim](https://github.com/seanghay/dockerfile/actions/workflows/node-18-slim.yml/badge.svg)](https://github.com/seanghay/dockerfile/actions/workflows/node-18-slim.yml)
 ```dockerfile
-FROM node:16-slim
+FROM node:18-slim
 
 # Create a new directory for the project
 RUN mkdir -p /opt/app
@@ -124,12 +138,12 @@ CMD [ "node", "main.js" ]
 
 ---
 
-## `node-18-slim`
+## `node-16-slim`
 
 
-[![node-18-slim](https://github.com/seanghay/dockerfile/actions/workflows/node-18-slim.yml/badge.svg)](https://github.com/seanghay/dockerfile/actions/workflows/node-18-slim.yml)
+[![node-16-slim](https://github.com/seanghay/dockerfile/actions/workflows/node-16-slim.yml/badge.svg)](https://github.com/seanghay/dockerfile/actions/workflows/node-16-slim.yml)
 ```dockerfile
-FROM node:18-slim
+FROM node:16-slim
 
 # Create a new directory for the project
 RUN mkdir -p /opt/app
